@@ -2,7 +2,8 @@
 import { GoogleGenAI } from "@google/genai";
 import { Product, UserClone } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// Always use process.env.API_KEY directly as per guidelines
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 type Angle = 'front' | 'back' | 'threeQuarter';
 
@@ -44,6 +45,7 @@ export async function generateTryOnImage(clone: UserClone, product: Product, ang
       },
     });
 
+    // Iterate through all parts to find the image part as per guidelines
     for (const part of response.candidates[0].content.parts) {
       if (part.inlineData) {
         return `data:image/png;base64,${part.inlineData.data}`;
@@ -76,5 +78,6 @@ export async function analyzeCloneImages(clone: UserClone): Promise<string> {
       ],
     },
   });
+  // Access .text property directly
   return response.text || "Athletic, balanced proportions, medium height";
 }

@@ -67,5 +67,27 @@ export const PRODUCTS: Product[] = [
     size: 'Large',
     condition: 'Excellent',
     originalImageUrl: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: '7',
+    name: 'Wool Fisherman\'s Sweater',
+    price: 75,
+    description: 'Heavy knit Irish wool in cream. Timeless warmth.',
+    category: 'Knitwear',
+    gender: 'Men',
+    size: 'Large',
+    condition: 'Excellent',
+    originalImageUrl: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: '8',
+    name: 'Wool Fisherman\'s Sweater',
+    price: 75,
+    description: 'Heavy knit Irish wool in cream. Timeless warmth.',
+    category: 'Knitwear',
+    gender: 'Women',
+    size: 'Large',
+    condition: 'Excellent',
+    originalImageUrl: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop'
   }
 ];
