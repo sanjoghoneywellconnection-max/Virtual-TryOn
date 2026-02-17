@@ -1,0 +1,7 @@
+{
+  "name": "EcoThread AI - Your Thrift Clone",
+  "description": "A premium thrift e-commerce experience where your AI clone replaces every model, letting you see exactly how vintage finds look on you before you buy.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
